@@ -33,7 +33,7 @@ public class LoginUserTest {
 
     @Test
     public void shouldReturnCorrectBodyWhenSuccessfulLogin() {
-        loginUserResponse = client.loginUser(user);
+        loginUserResponse = client.loginUser(DataProvider.getDefaultUser());
 
         JsonPath jsonPath = loginUserResponse.extract().jsonPath();
 
